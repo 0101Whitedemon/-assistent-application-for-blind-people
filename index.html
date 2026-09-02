@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VisionGuide AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>VisionGuide AI</h1>
+    <p>Computer Vision + Voice Assistant</p>
+
+    <video id="camera" autoplay playsinline></video>
+
+    <div class="controls">
+      <button onclick="startCamera()">Start Camera</button>
+      <button onclick="stopCamera()">Stop Camera</button>
+      <button onclick="speak('VisionGuide is ready. Use the Python app for AI detection.')">
+        Voice Test
+      </button>
+    </div>
+
+    <section class="status">
+      <p id="object">Camera offline</p>
+      <p id="direction">Direction: -</p>
+      <p id="warning">Status: Offline</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
